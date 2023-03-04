@@ -29,7 +29,7 @@ class FortifyServiceProvider extends ServiceProvider
         ->when([AdminController::class, AttemptToAuthenticate::class, RedirectIfTwoFactorAuthenticatable::class ])
         ->needs(StatefulGuard::class)
         ->give(function(){
-            return Auth::gurad('admin');
+            return Auth::guard('admin');
         });
     }
 
