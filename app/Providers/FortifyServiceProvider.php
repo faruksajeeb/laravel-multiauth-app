@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
-use Laravel\Fortify\Actions\AttemptToAuthenticate;
-use Laravel\Fortify\Actions\RedirectIfTwoFactorAuthenticatable;
+// use Laravel\Fortify\Actions\AttemptToAuthenticate;
+use App\Actions\Fortify\AttemptToAuthenticate;
+// use Laravel\Fortify\Actions\RedirectIfTwoFactorAuthenticatable;
+use App\Actions\Fortify\RedirectIfTwoFactorAuthenticatable;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use App\Http\Controllers\AdminController;
 
